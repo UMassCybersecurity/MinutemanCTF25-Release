@@ -1,0 +1,20 @@
+description: > 
+  "Error 220? No technomancer, it was I, the DOOM MA GEDDON virus all along!"
+  
+tags:
+  - medium
+  - rev
+  - concolic fuzzing
+    
+# Flags specify answers that your challenge use. You must provide at least one.
+flags:
+  - content: "MINUTEMAN{y0ur3_4n_h0n0r4ry_t3chn0m4nc3r_0f65b177}" # required field for every flag
+    type: "static" # must be static or regex
+
+# Name of the challenge
+# If not provided it is inferred from folder name
+name: Doom-Ma-Geddon
+
+# Category of challenge
+# If not provided it is inferred from folder name
+category: rev 

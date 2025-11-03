@@ -1,0 +1,12 @@
+# category: must change folder
+display-name-on-ctfd: "Frozen binary" # say this can be different from your challenge-naem
+
+# uuid can be generated with `uuidgen` on Linux 
+uuid: "924712bb-ee30-45e3-8b73-316274a31b10"
+# flag format is 
+flag: "MINUTEMAN{s3t_f1re_2_fr0zen_byt3s}"
+description: "Uh oh! This time Ice King froze this binary Jake and I were trying to run. Could you unfreeze it for us?" # have example showing newlines in YAML
+connection-info: "{{ HOST }}:{{ PORT }}"
+attribution: "atch2203" 
+tags:
+  - medium

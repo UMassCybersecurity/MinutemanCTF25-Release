@@ -1,0 +1,19 @@
+description: The flag is all messed up. Un-mess it up by revving the code!
+
+tags:
+    - easy
+    - rev
+    - python
+    
+# Flags specify answers that your challenge use. You must provide at least one.
+flags:
+    - content: "MINUTEMAN{you-have-solved-this-minuteman-challenge}" # required field for every flag
+      type: "static" # must be static or regex
+
+# Name of the challenge
+# If not provided it is inferred from folder name
+name: python-rev
+
+# Category of challenge
+# If not provided it is inferred from folder name
+category: rev

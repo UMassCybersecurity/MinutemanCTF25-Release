@@ -1,0 +1,6 @@
+Powerpuff WriteUp:
+Running the binary prompts for input with "Enter the secret:" but doesn't give us much information. 
+To solve this, we can use GDB to inspect the binary. Load it with `gdb ./challenge` and disassemble the main function using `disassemble main`. 
+Looking at the assembly, we can see a call to `strcmp` which compares our input against a hardcoded string. 
+We can find this string by examining the register or memory address being passed to strcmp, or simply by running `strings challenge` which reveals "salt" in the binary. 
+Inputting "salt" when prompted gives us the flag: `MINUTEMAN{Rowdyruff}`.

@@ -1,0 +1,15 @@
+# category: must change folder
+display-name-on-ctfd: "BMO's Message" # say this can be different from your challenge-naem
+
+# uuid can be generated with `uuidgen` on Linux 
+uuid: "b1245cb7-0e72-4927-ad41-068661ac1230"
+# flag format is 
+flag: "MINUTEMAN{hmmmm_check_please_1052553219}"
+description: "You gotta be flipping kidding me! Ice King just shot BMO with a bolt of ice, and now his speech is all globbed up. Can you help Jake and I figure out what BMO is trying to tell us?" # have example showing newlines in YAML
+connection-info: "{{ HOST }}:{{ PORT }}"
+attribution: "atch2203" 
+tags:
+  - linking
+  - medium
+hints:
+  - "The function signature is `char* BMOs_message()`"
