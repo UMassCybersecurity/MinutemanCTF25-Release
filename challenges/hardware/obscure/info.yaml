@@ -1,0 +1,15 @@
+# category: must change folder
+display-name-on-ctfd: "Obscure" # say this can be different from your challenge-name
+
+# uuid can be generated with `uuidgen` on Linux 
+uuid: "afe152e9-492f-49df-96fb-ccf268179f4a"
+# flag format is 
+flag: "MINUTEMAN{cRazY_insTrucTions}"
+description: "I found this weird chip and managed to get a binary from it. Can you help me figure out what it does?"
+attribution: "Om Patel"
+tags:
+  - hardware
+  - medium
+hints:
+  - "Try finding the chip and the architecture (start with the company logo)"
+  - "You may need google translate ;)"

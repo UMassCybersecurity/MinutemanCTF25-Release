@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Register{% endblock %}
+{% block content %}
+  <h2>Register</h2>
+  <form method="post" action="{{ url_for('register') }}">
+    <button type="submit">Click me to sign up!</button>
+  </form>
+  <p>Already have an account? <a href="{{ url_for('login') }}">Login</a></p>
+{% endblock %}

@@ -1,0 +1,33 @@
+services:
+  mongo:
+    image: mongo:6.0
+    restart: always
+    volumes:
+      - mongo-data:/data/db
+    ports:
+      - "27017:27017"
+
+  web:
+    build:
+      context: .
+      dockerfile: ./web/Dockerfile
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/cartoon_studio
+      - FLASK_APP=app.py
+      - FLASK_ENV=production
+      - ADMIN_PASSWORD=Q5x6vq1hU1QIy6WWZAQy
+      - SECRET_KEY=KT3QjN4OuGpzhb7XlZ99
+      - LOG_DIR=/logs
+    ports:
+      - "6021:6021"
+    volumes:
+      - ./web/logs:/app/logs
+      - ./web/templates:/app/templates
+      - ./web/static:/app/static
+    command: bash -c "python init_admin.py && flask run --host=0.0.0.0 --port=6021"
+    restart: on-failure
+
+volumes:
+  mongo-data:

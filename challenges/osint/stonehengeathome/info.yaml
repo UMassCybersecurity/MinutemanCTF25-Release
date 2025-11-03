@@ -1,0 +1,15 @@
+# category: must change folder
+display-name-on-ctfd: "Stonehenge at home" # say this can be different from your challenge-naem
+
+# uuid can be generated with `uuidgen` on Linux 
+uuid: "8f5b84e9-4a09-49f4-8a6e-e04635e19f2f"
+# flag format is 
+flag: "MINUTEMAN{lag_of_the_seasons}"
+description: "me: can we have stonehenge?\n mom: we have stonehenge at home\nstonehenge at home:\n\nFind the phrase in quotes on the circled podium. Flag is in format `MINUTEMAN{text_in_quotes}`\n eg: \"This is some quoted text,\" -> `MINUTEMAN{this_is_some_quoted_text}" # have example showing newlines in YAML
+connection-info: "{{ HOST }}:{{ PORT }}"
+attribution: "atch2203" 
+tags:
+  - easy
+  - touchgrass
+hints:
+  - "You might have to touch grass for this one"

@@ -1,0 +1,14 @@
+name: "Oops"
+description: "I uh... well, you'll see. Can you find the coordinates? I've mapped out where it happened, if that helps. 
+\n
+\n
+Flag format: `MINUTEMAN{coordinates of the location (no spaces)}`, for example `MINUTEMAN{42.3939874,-72.5276268}`"
+
+flags:
+  - content: "MINUTEMAN{43.3988891,142.4300312}"
+    type: "static"
+    data: "case_insensitive"
+
+tags:
+  - medium
+  - osint

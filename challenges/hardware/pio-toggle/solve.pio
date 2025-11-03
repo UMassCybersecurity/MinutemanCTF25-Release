@@ -1,0 +1,9 @@
+.program toggle
+
+set pindirs, 4
+loop:
+    set pins, 4 [31]
+    nop [17]
+    set pins, 0 [31]
+    nop [16]
+    jmp loop

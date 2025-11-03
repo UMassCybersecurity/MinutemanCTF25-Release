@@ -1,0 +1,1 @@
+flag = b"MINUTEMAN{ive_definitely_seen_harder_logs}"

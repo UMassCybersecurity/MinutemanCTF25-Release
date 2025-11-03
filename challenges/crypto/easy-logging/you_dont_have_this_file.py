@@ -1,0 +1,1 @@
+flag = b"MINUTEMAN{not_the_cyclic_group_you_should_use}"

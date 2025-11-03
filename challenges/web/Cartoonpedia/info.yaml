@@ -1,0 +1,13 @@
+name: Cartoonpedia
+category: web
+description: Check out this wikipedia for Cartoons I made! An example cartoon is Tom and Jerry. (I've hidden the flag in another table).
+tags: 
+  - hard
+flags:
+  - content: "MINUTEMAN{s3Qu3l1_1nJ3c710n_15_4w350m3}"
+
+hints:
+    - content: "https://portswigger.net/web-security/sql-injection/cheat-sheet"
+    - content: "How do you join 2 tables in SQL?"
+
+connection_info: {{HOST}}:{{PORT}}

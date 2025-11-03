@@ -1,0 +1,26 @@
+description: > 
+  "I want more better UART! Can you help me out?"
+
+  NOTE: This challenge uses a forked version of the (rp2040-pio-emulator)[https://github.com/omzz15/rp2040-pio-emulator] which is currently not fully implemented!"
+
+tags:
+  - hard
+  - hardware
+  - PIO
+    
+# Flags specify answers that your challenge use. You must provide at least one.
+flags:
+  - content: "MINUTEMAN{whAt_cAnT_PIO_dO!}" # required field for every flag
+    type: "static" # must be static or regex
+
+hints:
+  - "Setup a local development environment(with included emulator file and required dependencies) and add logging (print debugging never hurts!)"
+  - "We may not have math operations but we have jumps, and thats all we need"
+
+# Name of the challenge
+# If not provided it is inferred from folder name
+name: PIO UART 2
+
+# Category of challenge
+# If not provided it is inferred from folder name
+category: hardware

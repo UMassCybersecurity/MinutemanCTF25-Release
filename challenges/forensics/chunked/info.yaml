@@ -1,0 +1,10 @@
+display-name-on-ctfd: "chunked'
+
+# uuid can be generated with `uuidgen` on Linux 
+uuid: "0e040b71-100e-479a-bc80-f34631e9970e"
+# flag format is 
+flag: "MINUTEMAN{7H3_GR34T35T_F1X3ER_UPP3R}"
+description: "Bloo keeps corrupting my files! I managed to save bits of a really nice photo I took... but it's all messed up. Can you recover the original image?"
+attribution: "cosmicator" 
+tags:
+  - hard

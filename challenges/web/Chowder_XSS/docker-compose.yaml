@@ -1,0 +1,13 @@
+services:
+  backend:
+    restart: always
+    build: .
+    ports:
+      - 3110:4501
+    environment:
+      REDIS_URL: redis://cache-storage:6379
+      REDIS_HOST: cache-storage
+      FLAG: MINUTEMAN{R@dA_rAd@_rADa!11!}
+  cache-storage:
+    image: redis:latest
+    restart: always

@@ -1,0 +1,3 @@
+https://www.google.com/maps/@26.6582262,11.3952926,3a,90y,152.2h,83.27t/data=!3m8!1e1!3m6!1sCIHM0ogKEICAgIDxhLbbHg!2e10!3e11!6shttps:%2F%2Flh3.googleusercontent.com%2Fgpms-cs-s%2FAB8u6HY2W2BUlthaRDKAEGq1kL0mg2WK6S2hUiDQ7K8QUDFpzxxVoCLvZbP2oprji31OQ8T7zHrhZQA0eWWGNki8bYGS9j6uXEvkAHI6IVVGhcuoBCr5nK92NWNKYeHrVrYAlZugJmY%3Dw900-h600-k-no-pi6.730000000000004-ya220.59999389648436-ro0-fo100!7i11904!8i5952?entry=ttu&g_ep=EgoyMDI1MTAwMS4wIKXMDSoASAFQAw%3D%3D - fake location
+
+https://www.google.com/maps/place/CIBO+Fine+Dining/@10.8239971,78.6863139,17z/data=!3m1!4b1!4m6!3m5!1s0x3baaf50c28b596d5:0x99c059b6514cf387!8m2!3d10.8239971!4d78.6863139!16s%2Fg%2F11s538mgkh?entry=ttu&g_ep=EgoyMDI1MTAwMS4wIKXMDSoASAFQAw%3D%3D - real location

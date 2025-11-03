@@ -1,0 +1,25 @@
+description: Can you make Garfield happy by giving him his favorite flavor of pancakes? Just be careful not to give him anything that might upset his tummy!
+
+tags:
+    - easy
+    - xss
+    - javascript
+    
+# Flags specify answers that your challenge use. You must provide at least one.
+flags:
+    - content: "MINUTEMAN{yUmMy_pAncAkEs_b@bY_xSS}" # required field for every flag
+      type: "static" # must be static or regex
+
+# Name of the challenge
+# If not provided it is inferred from folder name
+name: Pancake Fever
+
+hints:
+    - content: "In the Cybersecurity Club Discord (not the MinutemanCTF discord) we posted slides from last semester's XSS workshop. Check it out if you'd like!"
+    - content: "One of the fields is vulnerable to reflected XSS. Try injecting a script tag there!"
+    - content: "The flag is Garfield Admin Bot's cookie."
+
+# Category of challenge
+# If not provided it is inferred from folder name
+category: web
+

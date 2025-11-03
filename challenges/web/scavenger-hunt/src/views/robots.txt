@@ -1,0 +1,1 @@
+Disallow: /titans-tower # 2: 3nj0y_th This file includes paths to directories that friendly crawlers aren't allowed to access. A good place to check for hidden directories that would be hard to find otherwise.

@@ -1,0 +1,26 @@
+name: "Beach City Beeping"
+description: "Pearl has been noticing strange sounds coming from around Beach City. \
+              She suspects that Peridot or the Diamonds might be up to this. Can you help \
+              her find out the meaning of this strange noise?\n \
+              This file contains a repeated message. The flag will be one instance of the \
+              message written in all capital letters with spaces replaced by underscores. \
+              For example, if the message was 'OH NO ITS THE ICE KING OH NO ITS THE ICE KING OH NO....' \
+              the flag would be MINUTEMAN{OH_NO_ITS_THE_ICE_KING}"
+
+attribution: "NonGonzo"
+
+flags:
+    - content: "MINUTEMAN{IF_ALL_PORK_CHOPS_WERE_PERFECT}"
+
+hints:
+    - "The file is an FM signal, you must demodulate the file to gain a message"
+
+files:
+    - "peridot_or_diamond.wav"
+
+static_challenge: true
+
+tags:
+    - "radio frequency"
+    - "decoding"
+    - "medium"

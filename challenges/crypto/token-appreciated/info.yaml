@@ -1,0 +1,16 @@
+name: "Token Appreciated"
+description: "Time is not of the essence!"
+flags: 
+  - content: "MINUTEMAN{thank_you_for_the_admin_access}"
+category: crypto
+
+
+tags: 
+  - crypto 
+  - xor
+  - medium
+
+connection_info: {{HOST}}:{{PORT}}
+
+hints:
+ - content: "https://en.wikipedia.org/wiki/XOR_cipher#:~:text=The%20XOR%20operator%20in,is%20called%20malleability."

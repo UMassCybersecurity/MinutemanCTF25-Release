@@ -1,0 +1,15 @@
+# category: must change folder
+display-name-on-ctfd: "Build-A-Flag 2" # say this can be different from your challenge-naem
+
+# uuid can be generated with `uuidgen` on Linux 
+uuid: "d588ef37-2235-4140-b1f6-a1adfe41de8f"
+# flag format is 
+flag: "^MINUTEMAN{\\w(?<!\\d)(?<w>\\w{0,1})(?=\\x65)\\w{2}(\\w)(?<!\\d),(\\w+?)\\+(?:\\d+?)\\+(\\S*?)\\d=\\3(?=789)\\4(?<=67)\\2{1,2}.(?=[^0-9A-Za-z])\\k<w>}$"
+description: "We got bored (but not lazy!) with making our own flags, so make your own! The flag just has to match the regex `^MINUTEMAN{\w(?<!\d)(?<w>\w{0,1})(?=\x65)\w{2}(\w)(?<!\d),(\w+?)\+(?:\d+?)\+(\S*?)\d=\3(?=789)\4(?<=67)\2{1,2}.(?=[^0-9A-Za-z])\k<w>}$`"
+connection-info: "{{ HOST }}:{{ PORT }}"
+attribution: "atch2203" 
+tags: 
+  - medium
+  - regex
+hints:
+  - "A good resource for checking regex is http://regex101.com/"

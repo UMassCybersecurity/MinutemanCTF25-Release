@@ -1,0 +1,52 @@
+.program uart_tx
+
+; initialize
+set pindirs, 1 ; Set pin as output
+set pins, 1   ; Idle high
+
+.wrap_target:
+    set y, 7          ; Set bit counter
+    pull block        ; Pull data from FIFO
+    wait 1 pin, 1     ; Wait for rts high
+    
+    set pins, 0    [5]; Start bit
+    
+    even_parity_keep_target:
+        nop             ; Account for executing 1 less cycle than a 1 bit (because it takes the first jump)
+    even_parity_loop:
+        out x, 1        ; Get next data bit
+        mov pins, x     ; Output data bit
+        jmp y-- jmp_to_next_even ; Decrement bit counter and loop if not zero
+        jmp !x out_even_even_parity [4]; Last bit is 0, send even parity
+        jmp out_even_odd_parity ; Last bit is 1, send odd parity
+        jmp_to_next_even: ; Calculate parity
+            jmp !x even_parity_keep_target [3]; If bit is 0 then parity stays even
+            jmp odd_parity_loop; If bit is 1 then parity becomes odd
+    
+    odd_parity_keep_target:
+        nop             ; Account for executing 1 less cycle than a 1 bit
+    odd_parity_loop:
+        out x, 1        ; Get next data bit
+        mov pins, x     ; Output data bit
+        jmp y-- jmp_to_next_odd ; Decrement bit counter and loop if not zero
+        jmp !x out_odd_odd_parity [4]; Last bit is 0, send odd parity
+        jmp out_odd_even_parity ; Last bit is 1, send even parity
+        jmp_to_next_odd: ; Calculate parity
+            jmp !x odd_parity_keep_target [3]; If bit is 0 then parity stays odd
+            jmp even_parity_loop; If bit is 1 then parity becomes even
+    
+    out_even_even_parity:
+        nop 
+    out_odd_even_parity:
+        set pins, 0 ; Data has even parity (add 0 to keep even)
+        jmp end [6]
+
+    out_odd_odd_parity:
+        nop
+    out_even_odd_parity:
+        set pins, 1 ; Data has odd parity (add 1 to make even)
+        jmp end [6]
+
+    end:
+        set pins, 1 [5]; Stop bit
+.wrap

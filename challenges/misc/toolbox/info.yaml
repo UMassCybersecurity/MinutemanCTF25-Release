@@ -1,0 +1,17 @@
+name: "toolbox"
+description: "This simple looking image has a lot of hidden information. You might have to use a few tools though!"
+
+Flag format: "MINUTEMAN{somethinghere}. You will be able to tell the flag once you see it"
+
+flags:
+  - content: "MINUTEMAN{wow-goodjob}"
+    type: "static"
+    data: "case_insensitive"
+
+tags:
+  - easy
+  - steganography
+  - misc
+
+hints:
+  - content: "Use -sf and -p options" 

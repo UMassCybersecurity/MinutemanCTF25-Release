@@ -1,0 +1,9 @@
+name: Cartoon Studio
+category: web
+description: After my Cartoon wiki got hacked, I've decided to make a studio where you can watch cartoons instead. I'm sure it's more secure!
+tags: 
+  - hard
+flags:
+  - content: "MINUTEMAN{N0_sql1_+_p@th_tr@v3Rs@l}"
+
+connection_info: {{HOST}}:{{PORT}}

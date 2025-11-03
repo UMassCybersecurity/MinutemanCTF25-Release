@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome Tom!</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive;
+      background: #aee1f9;
+      text-align: center;
+      padding: 50px;
+    }
+    img {
+      width: 400px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px gray;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome back, {{ session['username'] }}!</h1>
+  <p>{{ message }}</p>
+  <img src="https://upload.wikimedia.org/wikipedia/en/f/f6/Tom_Tom_and_Jerry.png" alt="Tom and Jerry">
+  <br><br>
+  <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>

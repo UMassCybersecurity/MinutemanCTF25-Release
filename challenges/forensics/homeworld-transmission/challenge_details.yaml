@@ -1,0 +1,26 @@
+# This is just an INFORMAL reference for initial setup. Treat what is on CTFd as the source of truth
+name: "Homeworld Transmission"
+description: "We've intercepted and decoded this transmission from the Gem Homeworld! They must have hidden important intelligence in the data!"
+attribution: "Larry (MrLarryMan)"
+
+flags:
+    - content: "MINUTEMAN{ẩLl_jẨzZ_Is_bẨsICẩlY_ST3vEn_Un1_mUzIc_PrỌv3_m3_wR0ng}"
+
+hints:
+    - "Remember what the format for flags is"
+    - "This was made using hexdump -Cv and xxd -p -c 100000 on a specially encoded file."
+    - "What do the first two bytes mean?"
+    - "Remember that the files are text representing binary, not the binary data itself"
+
+files:
+    - "transmission.zip"
+
+static_challenge: true
+
+tags:
+  - "forensics"
+  - "hexdump"
+  - "medium"
+  - "text encoding"
+
+# put other fields if relevant, i.e. requirements, next, solution, etc

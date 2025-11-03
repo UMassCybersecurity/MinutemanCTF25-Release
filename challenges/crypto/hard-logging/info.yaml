@@ -1,0 +1,16 @@
+description: "PLEASE KEEP YOUR BODY AND ARMS INSIDE THE LOG AT ALL TIMES. ENJOY THE RIDE. THANK YOU."
+flags:
+    - content: "MINUTEMAN{ive_definitely_seen_harder_logs}"
+name: hard-logging
+category: crypto
+
+tags:
+    - medium
+    - permutation
+    - discrete log
+
+hints:
+    - content: "https://en.wikipedia.org/wiki/Permutation#Cycle_notation" 
+
+    - content: "Can you reconstruct the shared private key based on the cycle decompositions?"
+

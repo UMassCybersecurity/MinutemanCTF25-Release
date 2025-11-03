@@ -1,0 +1,14 @@
+name: "Probably Not Slop"
+description: "I saw a panorama of this place in an ad, but I'm dubious that it even exists and isn't AI-generated. Just look at how smeary everything is! Could you help find me an easy way to get there to investigate?
+\n
+\n
+Flag format: `MINUTEMAN{name of the nearest transit station to this place}`, for example `MINUTEMAN{Northampton Station}`"
+
+flags:
+  - content: "MINUTEMAN{Tiruchchirappalli Fort}"
+    type: "static"
+    data: "case_insensitive"
+
+tags:
+  - easy
+  - osint

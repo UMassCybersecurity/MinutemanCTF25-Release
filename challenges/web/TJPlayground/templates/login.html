@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tom and Jerry Login</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive;
+      text-align: center;
+      background-image: url('https://media.newindianexpress.com/newindianexpress%2F2025-05-23%2Fpayygwh9%2FTOM-JERRY065044.JPG?w=1200&auto=format%2Ccompress&fit=max');
+      background-repeat: no-repeat;
+      background-size: cover;      
+      background-position: center; 
+      height: 100vh;                
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    form {
+      background: rgba(255, 255, 255, 0.85); 
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px gray;
+    }
+
+    input {
+      display: block;
+      margin: 10px auto;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #f49b42;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #e88a2f;
+    }
+
+    h1 {
+      color: #fff;
+      text-shadow: 2px 2px 5px #000;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🐱 Tom and Jerry Login 🐭</h1>
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      {% for category, msg in messages %}
+        <p style="color:red;">{{ msg }}</p>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+  <form method="POST">
+    <input type="text" name="username" placeholder="Username" required><br>
+    <input type="password" name="password" placeholder="Password" required><br>
+    <button type="submit">Login</button>
+  </form>
+</body>
+</html>

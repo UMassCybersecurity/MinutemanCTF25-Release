@@ -1,0 +1,9 @@
+services:
+  pio-toggle:
+    build: .
+    ports:
+      - "$PORT:5000"
+    environment:
+      - FLASK_SECRET=2390489572890142159124398723
+      - FLAG=$FLAG
+    restart: always

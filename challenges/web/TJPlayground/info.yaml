@@ -1,0 +1,13 @@
+name: TJPlayground
+category: web
+description: Can you log in as Tom and steal his secret flag?
+tags: 
+  - easy
+flags:
+  - content: "MINUTEMAN{f1rsT_sql_1nj3ct10n_fl4g}"
+
+hints:
+    - content: "What is a SQL injection?"
+    - content: "Try injecting SQL statements into the username or password fields."
+
+connection_info: {{HOST}}:{{PORT}}

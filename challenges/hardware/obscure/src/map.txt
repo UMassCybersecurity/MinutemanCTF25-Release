@@ -1,0 +1,384 @@
+Archive member included to satisfy reference by file (symbol)
+
+./include_lib/liba/br25/uboot.a(dec.o)
+                              (--whole-archive)
+./include_lib/liba/br25/uboot.a(lz4.o)
+                              (--whole-archive)
+./include_lib/liba/br25/uboot.a(printf.o)
+                              (--whole-archive)
+./include_lib/liba/br25/uboot.a(gpio.o)
+                              (--whole-archive)
+./include_lib/liba/br25/uboot.a(wdt.o)
+                              (--whole-archive)
+./include_lib/liba/br25/uboot.a(setup.o)
+                              (--whole-archive)
+./include_lib/liba/br25/uboot.a(clock.o)
+                              (--whole-archive)
+./include_lib/liba/br25/uboot.a(usb.o)
+                              (--whole-archive)
+./include_lib/liba/br25/uboot.a(efuse.o)
+                              (--whole-archive)
+./include_lib/liba/br25/uboot.a(crc.o)
+                              (--whole-archive)
+./include_lib/liba/br25/uboot.a(p33.o)
+                              (--whole-archive)
+./include_lib/liba/br25/uboot.a(irq.o)
+                              (--whole-archive)
+./include_lib/liba/br25/uboot.a(spi.o)
+                              (--whole-archive)
+./include_lib/liba/br25/uboot.a(sfc_boot.o)
+                              (--whole-archive)
+./include_lib/liba/br25/uboot.a(norflash.o)
+                              (--whole-archive)
+./include_lib/liba/br25/uboot.a(sfc_test.o)
+                              (--whole-archive)
+./include_lib/liba/br25/uboot.a(jlfs.o)
+                              (--whole-archive)
+./include_lib/liba/br25/uboot.a(upgrade.o)
+                              (--whole-archive)
+./include_lib/liba/br25/uboot.a(usb_phy.o)
+                              (--whole-archive)
+./include_lib/liba/br25/uboot.a(usb_setup.o)
+                              (--whole-archive)
+./include_lib/liba/br25/uboot.a(startup.o)
+                              (--whole-archive)
+./include_lib/liba/br25/uboot.a(version.z.o)
+                              (--whole-archive)
+/opt/jieli/pi32v2/bin/../lib/libc.a(lib_a-strcmp.o)
+                              dec.o (symbol from plugin) (strcmp)
+/opt/jieli/pi32v2/bin/../lib/libc.a(lib_a-strlen.o)
+                              dec.o (symbol from plugin) (strlen)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 objs/main.c.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 objs/delay.c.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 objs/uart.c.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 dec.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 lz4.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 printf.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 gpio.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 wdt.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 setup.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 clock.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 usb.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 efuse.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 crc.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 p33.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 irq.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 spi.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 sfc_boot.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 norflash.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 sfc_test.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 jlfs.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 upgrade.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 usb_phy.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 usb_setup.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 ./include_lib/liba/br25/uboot.a(startup.o)
+ .text          0x0000000000000000        0x0 ./include_lib/liba/br25/uboot.a(version.z.o)
+ .text          0x0000000000000000       0xa0 /opt/jieli/pi32v2/bin/../lib/libc.a(lib_a-strcmp.o)
+ .text          0x0000000000000000        0xc /opt/jieli/pi32v2/bin/../lib/libc.a(lib_a-strlen.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text_ram         0x0000000000012000 0x0000000000004800
+version_ram      0x0000000008000000 0x0000000000000080
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD objs/main.c.o
+LOAD uboot.elf.o
+LOAD objs/delay.c.o
+LOAD objs/uart.c.o
+                0x0000000000117d40                local_irq_enable = 0x117d40
+                0x0000000000117d44                local_irq_disable = 0x117d44
+                0x0000000000117d48                p33_buf = 0x117d48
+                0x0000000000117d4c                p33_xor_1byte = 0x117d4c
+                0x0000000000117d50                p33_and_1byte = 0x117d50
+                0x0000000000117d54                p33_or_1byte = 0x117d54
+                0x0000000000117d58                p33_tx_1byte = 0x117d58
+                0x0000000000117d5c                p33_rx_1byte = 0x117d5c
+                0x0000000000117d60                P33_CON_SET = 0x117d60
+                0x0000000000117d64                os_init = 0x117d64
+                0x0000000000117d68                os_start = 0x117d68
+                0x0000000000117d6c                os_get_curr_tcb_var = 0x117d6c
+                0x0000000000117d70                os_task_create = 0x117d70
+                0x0000000000117d74                os_current_task = 0x117d74
+                0x0000000000117d78                os_time_dly = 0x117d78
+                0x0000000000117d7c                os_time_get = 0x117d7c
+                0x0000000000117d80                os_task_del_req = 0x117d80
+                0x0000000000117d84                os_task_del_res = 0x117d84
+                0x0000000000117d88                os_task_del = 0x117d88
+                0x0000000000117d8c                __os_taskq_pend = 0x117d8c
+                0x0000000000117d90                os_taskq_pend = 0x117d90
+                0x0000000000117d94                os_task_pend = 0x117d94
+                0x0000000000117d98                __os_taskq_post = 0x117d98
+                0x0000000000117d9c                os_taskq_post = 0x117d9c
+                0x0000000000117da0                os_taskq_post_type = 0x117da0
+                0x0000000000117da4                os_taskq_flush = 0x117da4
+                0x0000000000117da8                task_queue_post_event = 0x117da8
+                0x0000000000117dac                os_taskq_post_msg = 0x117dac
+                0x0000000000117db0                os_taskq_post_event = 0x117db0
+                0x0000000000117db4                os_taskq_accept = 0x117db4
+                0x0000000000117db8                os_taskq_del = 0x117db8
+                0x0000000000117dbc                os_taskq_del_type = 0x117dbc
+                0x0000000000117dc0                os_sem_create = 0x117dc0
+                0x0000000000117dc4                os_sem_del = 0x117dc4
+                0x0000000000117dc8                os_sem_pend = 0x117dc8
+                0x0000000000117dcc                os_sem_post = 0x117dcc
+                0x0000000000117dd0                os_sem_set = 0x117dd0
+                0x0000000000117dd4                os_sem_valid = 0x117dd4
+                0x0000000000117dd8                os_sem_query = 0x117dd8
+                0x0000000000117ddc                os_mutex_create = 0x117ddc
+                0x0000000000117de0                os_mutex_del = 0x117de0
+                0x0000000000117de4                os_mutex_pend = 0x117de4
+                0x0000000000117de8                os_mutex_post = 0x117de8
+                0x0000000000117dec                os_mutex_valid = 0x117dec
+                0x0000000000117df0                xTaskCreate = 0x117df0
+                0x0000000000117df4                xTaskGetCurrentTaskHandle = 0x117df4
+                0x0000000000117df8                xTaskGetTickCount = 0x117df8
+                0x0000000000117dfc                xTaskGetHandle = 0x117dfc
+                0x0000000000117e00                vTaskDelete = 0x117e00
+                0x0000000000117e04                xTaskGetApplicationTaskTag = 0x117e04
+                0x0000000000117e08                vTaskSetApplicationTaskTag = 0x117e08
+                0x0000000000117e0c                xQueueGenericCreateStatic = 0x117e0c
+                0x0000000000117e10                xQueueGenericReset = 0x117e10
+                0x0000000000117e14                xQueueGenericSend = 0x117e14
+                0x0000000000117e18                xQueueGenericSendFromISR = 0x117e18
+                0x0000000000117e1c                xQueueGenericReceive = 0x117e1c
+                0x0000000000117e20                xQueueReceiveFromISR = 0x117e20
+                0x0000000000117e24                vQueueDelete = 0x117e24
+                0x0000000000117e28                uxQueueMessagesWaiting = 0x117e28
+                0x0000000000117e2c                uxQueueMessagesWaitingFromISR = 0x117e2c
+                0x0000000000117e30                uxQueueSpacesAvailable = 0x117e30
+                0x0000000000117e34                pcTaskGetName = 0x117e34
+                0x0000000000117e38                prvGetExpectedIdleTime = 0x117e38
+                0x0000000000117e3c                eTaskConfirmSleepModeStatus = 0x117e3c
+                0x0000000000117e40                vTaskStepTick = 0x117e40
+                0x0000000000117e44                pxPortInitialiseStack = 0x117e44
+                0x0000000000117e48                xPortStartScheduler = 0x117e48
+                0x0000000000117e4c                vPortEndScheduler = 0x117e4c
+                0x0000000000117e50                vPortYield = 0x117e50
+                0x0000000000117e54                vPortExitCritical = 0x117e54
+                0x0000000000117e58                OS_ClrPending = 0x117e58
+                0x0000000000117e5c                vTickISR = 0x117e5c
+                0x0000000000117e60                pmalloc_init = 0x117e60
+                0x0000000000117e64                pmalloc = 0x117e64
+                0x0000000000117e68                pfree = 0x117e68
+                0x0000000000117e6c                pmalloc_get_unused_pages = 0x117e6c
+                0x0000000000117e70                get_physic_address = 0x117e70
+                0x0000000000117e74                pmm_get_var = 0x117e74
+                0x0000000000117e78                vmm_init_ = 0x117e78
+                0x0000000000117e7c                vmalloc_ = 0x117e7c
+                0x0000000000117e80                vfree_ = 0x117e80
+                0x0000000000117e84                vmem_get_phy_adr = 0x117e84
+                0x0000000000117e88                vmem_start = 0x117e88
+                0x0000000000117e8c                vmem_end = 0x117e8c
+                0x0000000000117e90                vmm_get_var = 0x117e90
+                0x0000000000117e94                vmalloc_v2 = 0x117e94
+                0x0000000000117e98                vfree_v2 = 0x117e98
+                0x0000000000117e9c                vcopy_ = 0x117e9c
+                0x0000000000117ea0                get_cvsd_codec_ops = 0x117ea0
+                0x0000000000117ea4                VecPlus_fix_r_r_r = 0x117ea4
+                0x0000000000117ea8                VecMinus_fix_r_r_r = 0x117ea8
+                0x0000000000117eac                VecDiv_fix_r_r_r = 0x117eac
+                0x0000000000117eb0                VecEleMul_fix_r_r_r = 0x117eb0
+                0x0000000000117eb4                VecEleMul_fix_c_r_c = 0x117eb4
+                0x0000000000117eb8                VecMagAndDiv_fix = 0x117eb8
+                0x0000000000117ebc                VecCopy_fix_r_r = 0x117ebc
+                0x0000000000117ec0                VecConjEleMulAndDiv_fix = 0x117ec0
+                0x0000000000117ec4                VecRecurAvg_fix = 0x117ec4
+                0x0000000000117ec8                VecConjRecurAvg_fix = 0x117ec8
+                0x0000000000117ecc                VecMagRecurAvg_fix = 0x117ecc
+                0x0000000000117ed0                VecPlusMulScalar_fix = 0x117ed0
+                0x0000000000117ed4                VecGetMag_fix = 0x117ed4
+                0x0000000000117ed8                VecMax_fix_v_s = 0x117ed8
+                0x0000000000117edc                VecMin_fix_v_s = 0x117edc
+                0x0000000000117ee0                VecOppos_fix = 0x117ee0
+                0x0000000000117ee4                VecMean_fix = 0x117ee4
+                0x0000000000117ee8                VecMeanSq_fix_c = 0x117ee8
+                0x0000000000117eec                VecRequanByMax_fix_r = 0x117eec
+                0x0000000000117ef0                VecRequanByMax_fix_c = 0x117ef0
+                0x0000000000117ef4                VecEleShift_fix_c = 0x117ef4
+                0x0000000000117ef8                VecOvShift_fix = 0x117ef8
+                0x0000000000117efc                VecCopy_fix_r_c = 0x117efc
+                0x0000000000117f00                VecMeanSq_fix_r = 0x117f00
+                0x0000000000117f04                VecEleShift_fix_r = 0x117f04
+                0x0000000000117f08                logAprx_fix = 0x117f08
+                0x0000000000117f0c                expAprx_fix = 0x117f0c
+                0x0000000000117f10                sqrtAprx_fix = 0x117f10
+                0x0000000000117f14                VecEleMul_s16_s16_s32 = 0x117f14
+                0x0000000000117f18                VecEleMul_s16_s32_s16 = 0x117f18
+                0x0000000000117f1c                VecEleMul_s32_s16_s32 = 0x117f1c
+                0x0000000000117f20                VecOvShift_s16_s16 = 0x117f20
+                0x0000000000117f24                VecOvShift_s16_s32 = 0x117f24
+                0x0000000000117f28                VecCopy_s16_s32 = 0x117f28
+                0x0000000000117f2c                VecCopy_s32_s16 = 0x117f2c
+                0x0000000000117f30                VecMinus_s16_s32_s32 = 0x117f30
+                0x0000000000117f34                VecMeanSq_s16_s32 = 0x117f34
+                0x0000000000117f38                CircVecArrEwMulAndSum_fix = 0x117f38
+                0x0000000000117f3c                B_fir_cal_s = 0x117f3c
+                0x0000000000117f40                B_array_vol = 0x117f40
+                0x0000000000117f44                B_Syn_filt = 0x117f44
+                0x0000000000117f48                B_Residu = 0x117f48
+                0x0000000000117f4c                B_comput_correlataionS = 0x117f4c
+                0x0000000000117f50                B_iircal = 0x117f50
+                0x0000000000117f54                repair_corefun_corr = 0x117f54
+                0x0000000000117f58                repair_corefun_mixdata = 0x117f58
+                0x0000000000117f5c                get_repair_api = 0x117f5c
+                0x0000000000117f60                firfft = 0x117f60
+                0x0000000000117f64                firifft = 0x117f64
+                0x0000000000117f68                _rfifft_wrap = 0x117f68
+                0x0000000000117f6c                _rififft_wrap = 0x117f6c
+                0x0000000000117f70                memmem = 0x117f70
+                0x0000000000117f74                memcpy = 0x117f74
+                0x0000000000117f78                memmove = 0x117f78
+                0x0000000000117f7c                memcmp = 0x117f7c
+                0x0000000000117f80                memset = 0x117f80
+                0x0000000000117f84                strcmp = 0x117f84
+                0x0000000000117f88                strcpy = 0x117f88
+                0x0000000000117f8c                strlen = 0x117f8c
+                0x0000000000117f90                strncmp = 0x117f90
+                0x0000000000117f94                strstr = 0x117f94
+                0x0000000000117f98                strchr = 0x117f98
+                0x0000000000117f9c                __fixdfsi = 0x117f9c
+                0x0000000000117fa0                __fixsfsi = 0x117fa0
+                0x0000000000117fa4                spi_get_port = 0x117fa4
+                0x0000000000117fa8                spi_set_port = 0x117fa8
+                0x0000000000117fac                sfc_suspend = 0x117fac
+                0x0000000000117fb0                sfc_resume = 0x117fb0
+                0x0000000000117fb4                sfc_drop_cache = 0x117fb4
+                0x0000000000117fb8                chip_crc16 = 0x117fb8
+                0x0000000000117fbc                CrcDecode = 0x117fbc
+                0x0000000000117fc0                mask_init = 0x117fc0
+                0x0000000000117fc4                wdt_clr = 0x117fc4
+                0x0000000000117fc8                nvram_set_boot_state = 0x117fc8
+                0x0000000000117fcc                chip_reset = 0x117fcc
+                0x0000000000117fd0                the_debug_isr = 0x117fd0
+                0x0000000000117fd4                flash_poweron = 0x117fd4
+                0x0000000000117fd8                exception_irq_handler = 0x117fd8
+                0x0000000000117fdc                print = 0x117fdc
+                0x0000000000117fe0                sprintf = 0x117fe0
+                0x0000000000117fe4                printf = 0x117fe4
+                0x0000000000117fe8                puts = 0x117fe8
+                0x0000000000117fec                doe = 0x117fec
+                0x0000000000117ff0                LZ4_setStreamDecode = 0x117ff0
+                0x0000000000117ff4                LZ4_decompress_safe_continue = 0x117ff4
+                0x0000000000117ff8                LZ4_decompress_generic = 0x117ff8
+                0x0000000000117ffc                LZ4_decompress_safe_usingDict = 0x117ffc
+                0x0000000000110f60                bsinc_tab_6 = 0x110f60
+                0x00000000001111a4                bsinc_tab_6_l = 0x1111a4
+                0x0000000000110c60                ans_win = 0x110c60
+                0x0000000000110d60                nlp_win = 0x110d60
+                0x0000000000115ea8                iCos_Tab = 0x115ea8
+                0x0000000000110060                WOLA_ANA_128 = 0x110060
+                0x0000000000110460                WOLA_ANA_64 = 0x110460
+                0x0000000000110660                WOLA_SYN_128 = 0x110660
+                0x0000000000110a60                WOLA_SYN_64 = 0x110a60
+                0x0000000000031bfc                boot_arg_list = 0x31bfc
+                0x0000000000116f38                _pll_init = 0x116f38
+                0x0000000000031f00                _IRQ_MEM_ADDR = 0x31f00
+                0x0000000000031be0                _MASK_MEM_BEGIN = 0x31be0
+                0x0000000000000318                _MASK_MEM_SIZE = 0x318
+                0x0000000000115fb0                HWI_Install = 0x115fb0
+                0x0000000000112a40                rom_irq_init = 0x112a40
+                0x0000000000010880                nvram_list = 0x10880
+                0x0000000000012000                . = ORIGIN (text_ram)
+
+.text           0x0000000000012000      0x2c0
+ *(.start*)
+ .start         0x0000000000012000       0x34 ./include_lib/liba/br25/uboot.a(startup.o)
+                0x0000000000012000                _start
+ *(.text*)
+ .text          0x0000000000012034      0x24a uboot.elf.o
+                0x0000000000012172                main
+                0x000000000001227c                setup_init
+ *(.data*)
+ *(.rodata*)
+ .rodata.str1.1
+                0x000000000001227e       0x1b uboot.elf.o
+ *fill*         0x0000000000012299        0x3 
+ .rodata.cst16  0x000000000001229c       0x10 uboot.elf.o
+                0x00000000000122c0                . = ALIGN (0x20)
+ *fill*         0x00000000000122ac       0x14 
+
+.bss            0x00000000000122c0      0x420
+ *(.stack*)
+ .stack         0x00000000000122c0      0x400 ./include_lib/liba/br25/uboot.a(startup.o)
+                0x00000000000124c0                _stack
+                0x00000000000126c0                _ustack
+ *(.bss)
+ .bss           0x00000000000126c0        0x4 uboot.elf.o
+ *(.usb_ep0)
+ *(.usb_config_var)
+                0x00000000000126e0                . = ALIGN (0x20)
+ *fill*         0x00000000000126c4       0x1c 
+
+.bss_noinit     0x00000000000126e0        0x0
+ *(.bss_noinit)
+                0x00000000000126e0                . = ALIGN (0x20)
+                0x00000000000122c0                bss_begin = ADDR (.bss)
+                0x0000000000000420                bss_size = SIZEOF (.bss)
+                0x0000000008000000                . = ORIGIN (version_ram)
+
+.version        0x0000000008000000       0x40
+ *(.uboot.version)
+ .uboot.version
+                0x0000000008000000       0x23 ./include_lib/liba/br25/uboot.a(version.z.o)
+                0x0000000008000000                lib_uboot_version
+                0x0000000008000040                . = ALIGN (0x20)
+ *fill*         0x0000000008000023       0x1d 
+START GROUP
+LOAD ./include_lib/liba/br25/uboot.a
+END GROUP
+LOAD /opt/jieli/pi32v2/bin/../lib/libm.a
+LOAD /opt/jieli/pi32v2/bin/../lib/libc.a
+LOAD /opt/jieli/pi32v2/bin/../lib/libm.a
+LOAD /opt/jieli/pi32v2/bin/../lib/libcompiler-rt.a
+OUTPUT(uboot.elf elf32-pi32v2)
+
+.debug_str      0x0000000000000000     0x12f8
+ .debug_str     0x0000000000000000     0x12f8 uboot.elf.o
+                                       0x13ae (size before relaxing)
+
+.debug_loc      0x0000000000000000      0x2ab
+ .debug_loc     0x0000000000000000      0x2ab uboot.elf.o
+
+.debug_abbrev   0x0000000000000000      0x35e
+ .debug_abbrev  0x0000000000000000      0x336 uboot.elf.o
+ .debug_abbrev  0x0000000000000336       0x28 ./include_lib/liba/br25/uboot.a(startup.o)
+
+.debug_info     0x0000000000000000     0x2057
+ .debug_info    0x0000000000000000     0x1f95 uboot.elf.o
+ .debug_info    0x0000000000001f95       0xc2 ./include_lib/liba/br25/uboot.a(startup.o)
+
+.debug_ranges   0x0000000000000000        0x0
+ .debug_ranges  0x0000000000000000        0x0 uboot.elf.o
+
+.debug_macinfo  0x0000000000000000        0x1
+ .debug_macinfo
+                0x0000000000000000        0x1 uboot.elf.o
+
+.debug_pubnames
+                0x0000000000000000      0x420
+ .debug_pubnames
+                0x0000000000000000      0x420 uboot.elf.o
+
+.debug_pubtypes
+                0x0000000000000000      0x491
+ .debug_pubtypes
+                0x0000000000000000      0x491 uboot.elf.o
+
+.debug_frame    0x0000000000000000       0xf4
+ .debug_frame   0x0000000000000000       0xf4 uboot.elf.o
+
+.debug_line     0x0000000000000000      0xb77
+ .debug_line    0x0000000000000000      0xaed uboot.elf.o
+ .debug_line    0x0000000000000aed       0x5e ./include_lib/liba/br25/uboot.a(startup.o)
+ .debug_line    0x0000000000000b4b       0x2c ./include_lib/liba/br25/uboot.a(version.z.o)
+
+.debug_aranges  0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 ./include_lib/liba/br25/uboot.a(startup.o)

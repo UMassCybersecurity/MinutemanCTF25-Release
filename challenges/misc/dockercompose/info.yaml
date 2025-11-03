@@ -1,0 +1,12 @@
+# category: must change folder
+display-name-on-ctfd: "Docker Compose" # say this can be different from your challenge-naem
+
+# uuid can be generated with `uuidgen` on Linux 
+uuid: "1d55a389-bbb9-4a22-bdba-d27c08bcaae4"
+# flag format is 
+flag: "MINUTEMAN{c4lm_4nd_c0mpos3d}"
+description: "Try running this docker compose file!"
+connection-info: "{{ HOST }}:{{ PORT }}"
+attribution: "atch2203" 
+tags: 
+  - docker

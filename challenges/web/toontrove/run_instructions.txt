@@ -1,0 +1,3 @@
+To run this challenge locally, download/install docker on your system, and then run `docker compose up -d`.
+
+More info can be found in the misc/docker_compose challenge

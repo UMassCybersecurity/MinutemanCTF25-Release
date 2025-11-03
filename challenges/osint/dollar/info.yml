@@ -1,0 +1,16 @@
+description: >
+  DOLLARS! I like them in any shape or form~. Can you find the city that this picture is from?
+  Flag format: `MINUTEMAN{name of the city (no spaces)}`, for example `MINUTEMAN{Reykjavík}`
+flags:
+  - content: "MINUTEMAN{Jáchymov}"
+    type: "static"
+name: dollar
+category: osint
+tags:
+  - easy
+  - osint
+
+hints:
+  - content: "the flag accepts non-ascii characters"
+  - content: "i wonder why dollar is mentioned so many times. where is this picture even from?" 
+

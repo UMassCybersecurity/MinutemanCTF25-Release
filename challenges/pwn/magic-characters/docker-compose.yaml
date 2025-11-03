@@ -1,0 +1,8 @@
+services:
+  magic-characters:
+    build: .
+    environment:
+      - LISTEN_PORT=${LISTEN_PORT}
+    ports:
+      - ${LISTEN_PORT}:${LISTEN_PORT}/tcp
+    restart: always

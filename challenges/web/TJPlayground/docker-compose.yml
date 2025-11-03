@@ -1,0 +1,30 @@
+services:
+  web:
+    build: .
+    container_name: tomjerry-web
+    ports:
+      - "7014:7014"
+    environment:
+      - FLASK_SECRET_KEY=Is5noItA56IlXgjc
+      - MYSQL_HOST=db
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=vAPg69ZHY6cpYcfp
+      - MYSQL_DATABASE=tomjerry
+      - TOM_PASSWORD=KSBpH73gAKBetEpU
+      - FLAG=MINUTEMAN{f1rsT_sql_1nj3ct10n_fl4g}
+    depends_on:
+      - db
+    restart: always
+
+  db:
+    image: mysql:8
+    container_name: tomjerry-db
+    environment:
+      MYSQL_ROOT_PASSWORD: vAPg69ZHY6cpYcfp
+      MYSQL_DATABASE: tomjerry
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+
+volumes:
+  db_data:

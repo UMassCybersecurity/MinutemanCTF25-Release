@@ -1,0 +1,1 @@
+there's 2 images in the pdf, so use a pdf image extractor tool to get the image in the back, or just delete the front image in a pdf editor

@@ -1,0 +1,38 @@
+<meta
+  http-equiv="Content-Security-Policy"
+  content="defaul-src 'none';" />
+<!-- CSP policies are a way to protect again XSS attacks. But something seems wrong with this one...-->
+<!-- (Don't actually look at this too hard. It just doesn't work due to a typo, which means the page is vulnerable to XSS) -->
+
+<style>
+    @font-face {
+        font-family: "Chowder_Font";
+        src: url('../images/Beat_Word.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap; /* improves rendering performance */
+    }
+    * {
+        font-family: "Chowder_Font", sans-serif;
+        -webkit-text-stroke: 2px black;
+        color: white;
+    }
+    html {
+        font-size: 2em;
+    }
+</style>
+
+<body style="text-align: center; background-image: url('../images/Kitchen.jpg'); background-size: cover ;">
+    <h3> Mung Daal’s Catering </h3>
+    Welcome to Mung Daal's Catering! Write down an order here and Mung Daal will process it!<br />
+
+    <h2> Submit an Order </h2>
+
+    <form id="order-taker" action="/create" method="POST"> <!-- When you submit this form, make a post request to the /create endpoint with the contents in the input field serving as the request body-->
+        <label for="order">Enter your order!</label>
+        <br>
+        <input name="order" id= "order" style="width: 10em; height: 2em; font-size: 1.5em;" value="4x Purple Nurples">
+    </form>
+
+    <div id="order">You haven't submitted an order yet!</div>
+</body>

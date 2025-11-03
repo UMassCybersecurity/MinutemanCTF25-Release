@@ -1,0 +1,17 @@
+name: "Powerpuff"
+description: "I can't remember which Powerpuff girl is which. Now they're running in circles. Make some sense of this randomness!"
+flags: 
+  - content: "MINUTEMAN{B10550m_sh0uldnt_s33d_th3_rng}"
+category: crypto
+
+
+tags: 
+  - crypto 
+  - prng
+  - easy
+
+connection_info: {{HOST}}:{{PORT}}
+
+hints:
+ - content: "Can you recreate the pseudo random number generator the server uses?"
+ - content: "Remember to call the same calls the prng on the server makes!"

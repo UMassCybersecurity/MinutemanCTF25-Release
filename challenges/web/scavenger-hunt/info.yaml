@@ -1,0 +1,26 @@
+description: "There's a flag scattered across the website. Can you piece it together?"
+
+# Flags specify answers that your challenge use. You must provide at least one.
+flags:
+    - content: "MINUTEMAN{3nj0y_th3_r35t_0f_th3_ctf}" # required field for every flag
+      type: "static" # must be static or regex
+      data: "case_insensitive" # additional data
+
+# Name of the challenge
+# If not provided it is inferred from folder name
+name: Scavenger Hunt
+
+# Category of challenge
+# If not provided it is inferred from folder name
+category: web
+
+value: 100
+connection_info: http://web-challenges.minuteman.umasscybersec.org:5000
+
+tags:
+    - warmup
+
+hints:
+    - content: "The flag is made up of 5 parts; each part can be found somewhere on the website with a number corresponding to its order. e.g.: 1: MINUTEMAN{, 2: abc, 3: def, 4 ghi} would combine to form MINUTEMAN{abcdefghi}."
+    - content: "The quotes button says to look in HTML, JS, and CSS. I heard that you can open a thing called 'devtools' to see them."
+    - content: "Look in robots.txt for two of the flag parts."

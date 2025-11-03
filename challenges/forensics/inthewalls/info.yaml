@@ -1,0 +1,14 @@
+# category: must change folder
+display-name-on-ctfd: "In the Walls" # say this can be different from your challenge-naem
+
+# uuid can be generated with `uuidgen` on Linux 
+uuid: "3dfa635f-f5d2-4fb0-8d44-0c926a360c58"
+# flag format is 
+flag: "MINUTEMAN{w3re_in_y0ur_w4llz_w3k7b8s}"
+description: "There seems to be something behind this wall... Find it!"
+connection-info: "{{ HOST }}:{{ PORT }}"
+attribution: "atch2203" 
+tags: 
+  - easy
+hints:
+  - "There seems to be an image hidden behind the front image..."

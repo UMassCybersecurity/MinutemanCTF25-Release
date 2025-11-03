@@ -1,0 +1,23 @@
+description: > 
+  Ok Finn, I guess that one was too easy. But can you pass Key-per's riddle?
+  
+tags:
+  - easy
+  - pwn
+  - ret2win
+    
+# Flags specify answers that your challenge use. You must provide at least one.
+flags:
+  - content: "MINUTEMAN{1_th0ught_y0u'd_l00k_cut3_5tuff3d_1n_th4t_l0ck_ccd0341c5a6e8f}" # required field for every flag
+    type: "static" # must be static or regex
+
+hints:
+  - "Hmmm, SIMD instructions are annoying..."
+
+# Name of the challenge
+# If not provided it is inferred from folder name
+name: Oooverflow-2
+
+# Category of challenge
+# If not provided it is inferred from folder name
+category: pwn 

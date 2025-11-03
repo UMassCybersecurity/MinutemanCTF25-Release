@@ -1,0 +1,12 @@
+description: "Every turn and spin will remind us where we've been. Remind us when we've found the flag."
+flags:
+    - content: "MINUTEMAN{i_didnt_know_rsa_was_homomorphic}"
+name: plainly-rotated
+category: crypto
+
+connection_info: "{{ HOST }}:{{ PORT }}"
+
+tags:
+    - hard
+    - rsa
+

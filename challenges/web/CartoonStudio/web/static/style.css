@@ -1,0 +1,48 @@
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(135deg, #fef6fb, #fffef6);
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .site-header {
+    background: #ffc107;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .site-header h1 { margin: 0; font-size: 24px; }
+  .site-header a { color: #000; text-decoration: none; }
+  
+  .container { padding: 20px; }
+  
+  .cartoon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+  }
+  
+  .cartoon-card {
+    background: white;
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  }
+  
+  .watch-btn {
+    display: inline-block;
+    background: #6f42c1;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  
+  .flashes { list-style: none; padding: 0; }
+  .flashes li { padding: 6px; margin-bottom: 6px; border-radius: 6px; }
+  .flashes li.success { background: #daf5d8; }
+  .flashes li.warning { background: #fff4d6; }
+  .flashes li.danger { background: #ffd6d6; }  

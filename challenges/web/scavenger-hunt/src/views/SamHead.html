@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="views/headbounce.css">
+</head>
+
+<script src="views/utilfuncs.js"></script>
+
+<script>
+
+  function quote() {
+
+    const quotes = [
+      "Evil beware, we have waffles - Raven",
+      "BOOYAH - Cyborg",
+      "It's the end of the world. Did you think it would be easy? - Slade",
+      "Some things defy explanation. Maybe you’re one of them. - Raven",
+      "Titans GO! - Robin",
+      "You may not like your birthday, but we are glad you were born. - Beast Boy",
+      "The sandwich will look beautiful in my hair. -Starfire"
+    ]
+
+    let quote = quotes[getRandomInt(quotes.length)] + "\n\n I wonder if there are more of these in the HTML, JS, and CSS of this website..."
+
+    alert(quote);
+  }
+  /* 1: MINUTEMAN{ */
+  /* look for other parts of the flag in code of this static site! */
+</script>
+
+<body>
+
+<div class="box"><b></b></div>
+
+<center>
+<br/>
+Welcome to The Teen Titans GO! motivational quote page.
+
+Click here for a motivational quote:
+
+<div style="text-align:center">
+  <button type="submit" class="btn" onclick="quote()">Quote me!</button>
+</div>
+
+</center>
+
+</body>
+</html>
+

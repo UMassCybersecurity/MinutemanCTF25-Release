@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Watching {{ cartoon.title }}{% endblock %}
+{% block content %}
+  <h2>Watching: {{ cartoon.title }}</h2>
+  <p>{{ cartoon.description }}</p>
+
+  <div class="video-wrap">
+    <video controls width="720">
+      <source src="{{ cartoon.url }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <p><a href="{{ url_for('dashboard') }}">Back to dashboard</a></p>
+{% endblock %}

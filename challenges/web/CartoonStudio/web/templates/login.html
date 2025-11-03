@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block content %}
+  <h2>Login</h2>
+  <form id="loginForm" method="post">
+    <label>Username: <input name="username" id="username"></label><br>
+    <label>Password: <input name="password" id="password" type="password"></label><br>
+    <button type="submit">Login</button>
+  </form>
+  
+  <script>
+  document.getElementById('loginForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+  
+    const body = {
+      username: document.getElementById('username').value,
+      password: document.getElementById('password').value
+    };
+  
+    const resp = await fetch('/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+      credentials: 'same-origin'
+    });
+  
+    if (resp.redirected) {
+      window.location = resp.url;
+      return;
+    }
+
+    const text = await resp.text();
+    console.log(text);
+  });
+  </script>
+  
+  <p>No account? <a href="{{ url_for('register') }}">Register</a></p>
+{% endblock %}

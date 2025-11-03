@@ -1,0 +1,33 @@
+<body style="
+  text-align:center; 
+  font-family:'Comic Sans MS',cursive; 
+  background-image:url('https://media.tenor.com/wqtPM7jCmnQAAAAe/the-garfield-movie-chef.png');
+  background-size:cover; 
+  background-repeat:no-repeat; 
+  background-position:center; 
+  background-attachment:fixed;
+  color:#333;
+">
+  <h1>🥞 Garfield Admin Bot 🤖</h1>
+  <h3>Submit a URL and Garfield will go check it!</h3>
+
+  <form action="/lookup" method="POST" style="
+    background:rgba(255,255,255,0.9); 
+    display:inline-block; 
+    padding:30px; 
+    border-radius:20px; 
+    box-shadow:3px 3px 10px rgba(0,0,0,0.3);
+  ">
+    <input type="text" name="URL" placeholder="Enter site URL" required 
+      style="margin:10px; padding:10px; border-radius:10px; border:1px solid #ccc; width:250px;" />
+    <br/><br/>
+    <button type="submit" style="
+      background:orange; 
+      color:white; 
+      padding:10px 20px; 
+      border:none; 
+      border-radius:10px; 
+      cursor:pointer;
+    ">Send to Garfield</button>
+  </form>
+</body>

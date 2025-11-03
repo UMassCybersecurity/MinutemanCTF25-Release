@@ -1,0 +1,15 @@
+# category: must change folder
+display-name-on-ctfd: "ToonTrove" # say this can be different from your challenge-naem
+
+# uuid can be generated with `uuidgen` on Linux 
+uuid: "164126d2-7070-4bf4-9e3a-6aad6a87e490"
+# flag format is 
+flag: "MINUTEMAN{3nv_v4rs_ar3nt_s0_s3cret}"
+description: "I made this cool web application for collecting images from other websites. Try it out!"
+connection-info: "{{ HOST }}:{{ PORT }}"
+attribution: "atch2203" 
+tags: 
+  - medium
+hints:
+  - "Is there anywhere on a linux system that contains environment variables in a file?"
+  - "What is contained in the /proc folder?"

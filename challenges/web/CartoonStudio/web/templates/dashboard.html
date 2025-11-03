@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+  <h2>Dashboard</h2>
+  <p>Browse cartoons and click to watch.</p>
+  <div class="cartoon-grid">
+    {% for c in cartoons %}
+      <div class="cartoon-card">
+        <h3>{{ c.title }}</h3>
+        <p>{{ c.description }}</p>
+        <p>Views: {{ c.views }}</p>
+        <a class="watch-btn" href="{{ url_for('watch', cartoon_id=c._id) }}">Watch</a>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

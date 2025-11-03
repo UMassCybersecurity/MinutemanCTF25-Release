@@ -1,0 +1,21 @@
+name: "Message From The Park"
+description: "Dude, Muscle Man just picked up this strange signal from the antenna on his trailer. He says he knows a guy who owns a satellite and sends him messages like these, but he can't figure out what this one means. You gotta help me decode this transmission before Benson notices I've stopped working."
+attribution: "NonGonzo"
+
+flags:
+    - content: "MINUTEMAN{Y0u_SLackerS}"
+
+hints:
+    - "How is this signal being sent?"
+    - "How did NASA receive images from the moon landing?"
+    - "60"
+
+files:
+    - "unknown_signal.wav"
+
+static_challenge: true
+
+tags:
+    - "radio frequency"
+    - "decoding"
+    - "medium"

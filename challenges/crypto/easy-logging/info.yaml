@@ -1,0 +1,15 @@
+description: "I recently got into card tricks, and I came up with a cool way to encrypt stuff by cutting the deck."
+flags:
+    - content: "MINUTEMAN{not_the_cyclic_group_you_should_use}"
+name: easy-logging
+category: crypto
+
+tags:
+    - easy
+    - permutation
+    - discrete log
+
+hints:
+    - content: "Look at the assertion on line 55" 
+
+    - content: "There are not that many cyclic permutations"

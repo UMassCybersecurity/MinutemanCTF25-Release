@@ -1,0 +1,22 @@
+description: You've heard of binary. You've heard of hexadecimal. But have you heard of six-sevimal? Do the math problem displayed in the equation, then convert it into base 10 and wrap it in MINUTEMAN{}. i.e. if the problem is (🤩 + 🦴) - 👄, you would submit MINUTEMAN{36}
+
+tags:
+    - easy
+    - base systems
+    - warmup
+    
+# Flags specify answers that your challenge use. You must provide at least one.
+flags:
+    - content: "MINUTEMAN{6777666677677}" # required field for every flag
+      type: "static" # must be static or regex
+
+# Name of the challenge
+# If not provided it is inferred from folder name
+name: Six Seven
+
+hints:
+    - content: "If you aren't already familiar, learn how base-2 and base-16 work in comparison to base-10"
+
+# Category of challenge
+# If not provided it is inferred from folder name
+category: misc

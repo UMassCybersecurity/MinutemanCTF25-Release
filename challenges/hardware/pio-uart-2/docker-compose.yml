@@ -1,0 +1,9 @@
+services:
+  pio-toggle:
+    build: .
+    ports:
+      - "$PORT:8000"
+    environment:
+      - FLASK_SECRET=5390178236dca4b1a9e1f4e2b7e6f4c2
+      - FLAG=$FLAG
+    restart: unless-stopped

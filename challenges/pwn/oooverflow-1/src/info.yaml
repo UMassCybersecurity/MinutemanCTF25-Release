@@ -1,0 +1,24 @@
+description: > 
+  "The Riddle Master is blocking the bridge to Jake's imaginary machine. Can you help Finn and Jake cross the drawbridge?"
+  
+tags:
+  - easy
+  - pwn
+  - buffer overflow
+    
+# Flags specify answers that your challenge use. You must provide at least one.
+flags:
+  - content: "MINUTEMAN{m4n_th4t_r1ddl3_5ucks_6615cf64314a6}" # required field for every flag
+    type: "static" # must be static or regex
+
+hints:
+  - "How far is the stack variable from the buffer?"
+  - "Might wanna use little endian."
+
+# Name of the challenge
+# If not provided it is inferred from folder name
+name: Oooverflow-1
+
+# Category of challenge
+# If not provided it is inferred from folder name
+category: pwn 

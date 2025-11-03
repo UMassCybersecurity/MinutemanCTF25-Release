@@ -1,0 +1,26 @@
+description: > 
+  "I need all my CPU for important calculations, can you toggle this LED for me using pico PIO? 
+
+  NOTE: This challenge uses the (rp2040-pio-emulator)[https://github.com/NathanY3G/rp2040-pio-emulator] which is currently not fully implemented!"
+
+tags:
+  - easy
+  - hardware
+  - PIO
+    
+# Flags specify answers that your challenge use. You must provide at least one.
+flags:
+  - content: "MINUTEMAN{magic_of_p10}" # required field for every flag
+    type: "static" # must be static or regex
+
+hints:
+  - "Try looking at some [PIO tutorials](https://www.elecfreaks.com/blog/post/case-8-pio-programmable-input-and-output-ports.html)"
+  - "Don't forget to count your clock cycles!"
+
+# Name of the challenge
+# If not provided it is inferred from folder name
+name: pio-toggle
+
+# Category of challenge
+# If not provided it is inferred from folder name
+category: hardware

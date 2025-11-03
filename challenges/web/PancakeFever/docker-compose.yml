@@ -1,0 +1,20 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "1337:1337"
+    environment:
+      - DOMAIN=localhost:6666
+    depends_on:
+      - bot
+
+  bot:
+    build:
+      context: ./bot
+    restart: always
+    environment:
+      - DOMAIN=frontend:1337
+      - FLAG=MINUTEMAN{yUmMy_pAncAkEs_b@bY_xSS}
+    ports:
+      - "9000:9000"

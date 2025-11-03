@@ -1,0 +1,14 @@
+name: Dexter's Lab
+category: web
+description: Dexter only needs this one formula to find the solution to the problem he has been tackling for months. But he forgot where he put it. Do you think you can find in? The formula is in flag.txt
+
+tags: 
+  - easy
+flags:
+  - content: "MINUTEMAN{Y0u_F0unD_the_$F0rmU1a}"
+
+hints:
+    - content: there is a path traversal vulnerability, how do you exploit it?
+    - content: does it accept plaintext or url encoding?
+
+connection_info: {{HOST}}:{{PORT}}

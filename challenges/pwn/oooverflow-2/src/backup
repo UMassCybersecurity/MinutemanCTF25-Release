@@ -1,0 +1,19 @@
+FROM docker.io/debian:bookworm
+
+RUN echo "root:rootrx4pi3hu85ng8x2eg66yilnvg8cgudni" | chpasswd
+
+WORKDIR /home/ctf
+
+RUN useradd -d /home/ctf/ -u 1001 ctf
+RUN echo "ctf:ctfyqol26c76cx5fsdqd8fjhimom16jrqls" | chpasswd
+
+
+COPY static/oooverflow2.c .
+COPY static/oooverflow2 .
+COPY flag.txt .
+
+ENTRYPOINT [ "./ynetd", "-p", "4113", "-u", "ctf", "/home/ctf/oooverflow2" ]
+
+# TODO port
+EXPOSE 4113
+CMD ./ynetd -p 4113 "su - ctf -c ./oooverflow2"

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Admin Panel{% endblock %}
+{% block content %}
+  <h2>Admin Panel</h2>
+  <section>
+    <h3>Top 10 Users</h3>
+    {% if top_users %}
+      <ol>
+        {% for u in top_users %}
+          <li>{{ u.username }} — watches: {{ u.get('watch_count', 0) }}</li>
+        {% endfor %}
+      </ol>
+    {% else %}
+      <p>No data loaded. Click "Refresh Top Users" to load.</p>
+    {% endif %}
+    <p><a href="{{ url_for('admin_top_page') }}">Refresh Top Users</a></p>
+  </section>
+
+  <section>
+    <h3>Logs</h3>
+    <p>Download application logs:</p>
+    <ul>
+      <li><a href="{{ url_for('download_logs', filename='app.log') }}">Download app.log</a></li>
+    </ul>
+  </section>
+{% endblock %}
