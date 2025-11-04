@@ -1,7 +1,19 @@
-FROM python:latest
-RUN apt-get update && apt-get install socat -y
+FROM debian:bookworm-slim 
+
+# Install Python
+RUN apt-get update && apt-get install -y python3 && rm -rf /var/lib/apt/lists/*
+
+# Set working directory
 WORKDIR /app
-COPY chall.py you_dont_have_this_file.py ./
-RUN chmod +x chall.py
-ENV LISTEN_PORT=40447
-CMD ["sh","-c","socat TCP-LISTEN:${LISTEN_PORT},reuseaddr,fork EXEC:'python3 chall.py',pty,stderr"]
+
+# Copy ynetd and the Python script into the container
+COPY ynetd chall.py you_dont_have_this_file.py ./
+
+# Make ynetd and the script executable
+RUN chmod +x ynetd chall.py
+
+# Expose the port that ynetd will listen on
+EXPOSE 40447
+
+# Start ynetd to serve the Python script
+CMD ["./ynetd", "-p", "40447", "python3 chall.py"]

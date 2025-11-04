@@ -1,6 +1,7 @@
+version: "3.8"
 services:
   challenge:
     build: .
     ports:
-      - "7003:40447"
+      - "7005:40447"
     restart: always
